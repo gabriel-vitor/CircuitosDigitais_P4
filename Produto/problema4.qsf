@@ -1,0 +1,100 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 13:44:14  July 08, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		problema4_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY lavanderia
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:44:14  JULY 08, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name VERILOG_FILE mefselectlavagem.v
+set_global_assignment -name VERILOG_FILE muxP.v
+set_global_assignment -name VERILOG_FILE mefselectmaquina.v
+set_global_assignment -name VERILOG_FILE MEFdebouncer.v
+set_global_assignment -name VERILOG_FILE mefcedulas.v
+set_global_assignment -name VERILOG_FILE liberarMaquina.v
+set_global_assignment -name VERILOG_FILE lavanderia.v
+set_global_assignment -name VERILOG_FILE flipflopT.v
+set_global_assignment -name VERILOG_FILE divisorFreq.v
+set_global_assignment -name VERILOG_FILE demuxP.v
+set_global_assignment -name VERILOG_FILE decoderMaquinas.v
+set_global_assignment -name VERILOG_FILE decoderLavagem.v
+set_global_assignment -name VERILOG_FILE decoderCedula.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_location_assignment PIN_90 -to saida[0]
+set_location_assignment PIN_70 -to saida[1]
+set_location_assignment PIN_42 -to chave[0]
+set_location_assignment PIN_40 -to chave[1]
+set_location_assignment PIN_38 -to chave[2]
+set_location_assignment PIN_36 -to chave[3]
+set_location_assignment PIN_34 -to chave[4]
+set_location_assignment PIN_30 -to chave[5]
+set_location_assignment PIN_33 -to chave[6]
+set_location_assignment PIN_35 -to chave[7]
+set_location_assignment PIN_12 -to clk
+set_location_assignment PIN_41 -to saida[2]
+set_location_assignment PIN_98 -to saida[3]
+set_location_assignment PIN_100 -to saida[4]
+set_location_assignment PIN_92 -to saida[5]
+set_location_assignment PIN_39 -to saida[6]
+set_location_assignment PIN_96 -to saida[7]
+set_location_assignment PIN_88 -to blocos[0]
+set_location_assignment PIN_66 -to blocos[1]
+set_location_assignment PIN_68 -to blocos[2]
+set_location_assignment PIN_37 -to blocos[3]
+set_location_assignment PIN_52 -to btn[0]
+set_location_assignment PIN_50 -to btn[1]
+set_location_assignment PIN_48 -to reset
+set_location_assignment PIN_1 -to clkr
+set_location_assignment PIN_54 -to led
+set_global_assignment -name VERILOG_FILE ffd.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
